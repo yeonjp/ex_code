@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARA EDUCATION</title>
+    <!-- 외부 문서 연결
+       <link  rel="stylesheet" href="연결할 문서경로">  -->
+   
+    <link rel="stylesheet" href="./css/reset.css" >
+   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gowun+Dodum&family=Sevillana&display=swap" rel="stylesheet">  
+    <style>
+      html{font-size: 100%;}
+      body{
+        line-height: 1.7; /* 줄간격 */
+        color: blueviolet; /* 전체 글자 색 */
+        max-width: 960px;
+        margin: 0 auto; /* 가운데 정렬 */
+
+       }
+       #wrap{
+        width: 100%; /* 부모 크기 만큼 */
+        margin: 0 auto;  /* 위/아래  왼쪽/오른쪽 */
+        background-image: url(./images/kinder_elementary_02.jpg);
+        min-height: 100vh; /* 화면 높이 만큼 이미지 높이 만들기 */ 
+      }
+       .bigBackground{
+       /* background-size: cover;  이미지의 가로와 세로 비율을 유지한 상태로 화면을 꽉 채움 */
+       background-size: 100% 100%;
+       background-position: center top;  /* 배경그림의 위치, 가운데 위쪽에 맞춤 */
+        background-repeat: no-repeat; /* 배경이미지 반복 안함 */
+    }
+
+    img{ max-width: 100%; }
+
+    .pageHeader{
+        display: flex;
+        justify-content:space-between; /*양쪽 끝에 붙이기 */
+        padding: 0 1.5%; /* 테두리와 글자/그림 사이 간격 , 위/아래 왼쪽/오른쪽 */
+    }
+    .logo{
+        width: 250px;
+        height: 40px;
+        margin-top:14px
+    }
+    .mainNav{
+        display: flex; /* 반드시 부모에 설정 */
+        font-size: 1.25rem;
+        margin-top: 20px;
+        list-style: none;
+    }
+    .mainNav li{
+        font-family: 'Cute Font', sans-serif;  /* 글꼴 */
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    .mainNav a{
+        color: blueviolet;
+    }
+    .mainNav a:hover{ /* 링크에 마우스가 올라오면 */
+        color:rgb(23, 83, 37);
+    }
+
+    .wrapper{
+        max-width: 96%;
+        margin: 0 auto; /* 가운데 정렬 */
+        padding: 0 4%; /* 스마트폰 등에서 쉽게 볼 수 있도록 양쪽 끝 지정 */
+    }
+    .mainContent{
+        text-align: center; /* 글자를 가운데 정렬 */
+        margin-top: 8%;
+    }
+    .mainContent>h2{
+        font-family: 'Sevillana', cursive;
+        font-size: 4.0rem;
+        line-height: 1.5;
+        font-weight: normal;  /*글자 두께, 글자진하기 설정 */
+    }
+    .mainContent>p{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-size: 1.3rem;
+        margin: 10px 0 45px 0 ; /* 10px 0 45px */
+    }
+
+    .button{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-size: 1.2rem;
+        background-color: blueviolet; /* 배경색 */
+        color: white;  /* 글자색 */
+        border-radius: 5px; /* 모서리 둥글게 */
+        padding: 15px 28px;
+    }
+    .button:hover{
+        background-color: green;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- 가장 밖에 있는 상자(wrapper) -->
+   <div id="wrap"  class="bigBackground">
+        <!-- 로고 및 top 메뉴 부분 -->
+        <header class="pageHeader">
+            <!-- 하이퍼 링크 : <a href="이동할 경로">화면에 나타날 내용 </a>-->
+            <!-- 그림 <img src="이미지 경로">    src:source -->
+          <div><a href="index.html"><img class="logo" src="./images/logo.png"></a></div>
+          
+          <!-- 상단 메뉴 부분-->
+          <nav> <!-- 하이퍼링크가 설정된 곳에 주로 사용, 네비게이션(안내 메뉴들)-->
+            <ul class="mainNav">
+                <li><a href="membership.html">MEMBERSHIP</a></li>
+                <li><a href="timetable.html">TIMETABLE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </header>    
+        <!-- 본문 콘텐츠 부분 -->
+        <div class="mainContent wrapper">
+            <h2>The Creation Of Something <br> Out Of Nothing</h2>
+            <p>새로움과 즐거움이 함께하는 책 세상에서 오늘 하루 즐거운 시간을...</p>
+            <a class="button" href="welcome.html">즐거운 시간 찾기</a>
+        </div>
+   </div> <!-- 가장 밖에 있는 상자의 끝 -->   
+</body>
+</html>
