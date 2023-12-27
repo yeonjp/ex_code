@@ -1,1 +1,71 @@
+#index.html
 
+<!-- index.html : 무조건 처음 페이지, web 폴더에 작성 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARA EDUCATION</title>
+    <!-- 외부 문서 연결 <link rel="stylesheet" href = "연결한 문서경로" -->
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+</body>
+</html>
+
+#membership.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+    <h1>membership page</h1>
+</body>
+</html>
+
+#timetable.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표 페이지</title>
+</head>
+<body>
+    <h1>timetable page</h1>
+</body>
+</html>
+
+#welcome.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환영 페이지</title>
+</head>
+<body>
+    <h1>welcome page</h1>
+</body>
+</html>
+
+#contact.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연락처 페이지</title>
+</head>
+<body>
+    <h1>contact page</h1>
+</body>
+</html>
