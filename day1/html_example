@@ -7,10 +7,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BARA EDUCATION</title>
-    <!-- 외부 문서 연결 <link rel="stylesheet" href = "연결한 문서경로" -->
+    <!-- 외부 문서 연결 
+        <link rel="stylesheet" href = "연결한 문서경로" 
+    <link rel="stylesheet" href="./css/reset.css"> <= 이거 있고 없고 차이가 크다. reset은 기본값을 삭제 -->
     <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+        html /* html 전체 적용 */
+        {
+            font-size: 100px;
+        } 
+
+        body /* 순서대로 줄간격, 전체 글자 색,max-width(최대 너비 값) 12의 배수로 하는 것이 편하다! */
+        {
+            line-height: 1.7;
+            color: blueviolet;
+            max-width: 960px;
+            margin: 0 auto;/* 중요! 부모 요소의 가운데 정렬 */
+            /*border: 1px solid salmon;*/
+            /* background-color: aquamarine; 페이지 전체를 색칠함. */
+        }
+        #wrap/*stylesheet는 "속성:값"으로 표현*/
+        {
+            width: 100%;/*부모 크기 만큼*/
+            margin: 0 auto; /* margin 위/아래 : 0 왼쪽/오른쪽 : 가운데 정렬*/
+            background-image: url(./images/kinder_elementary_02.jpg);
+            min-height: 100vh;/*화면 높이만큼 이미지 높이 만들기*/
+        }
+        .bigBackground
+        {
+            /* background-size: cover; img의 가로세로 비율을 유지한 상태로 화면을 꽉 채움.*/
+            background-size: 100% 100%;
+            background-position: center top; /*배경 그림의 위치, 가운데 위쪽으로 맞춤*/
+            background-repeat: no-repeat;/*배경 이미지 반복 안함.*/
+        }
+    </style> <!-- style은 헤드에 작성하는게 좋음 -->
 </head>
 <body>
+    
+    <div id="wrap" class="bigBackground"><!-- 가장 밖에 있는 상자(wrapper),wrap은 body 크기와 비슷하면 된다. -->
+        
+        <!-- 로고 및 top 메뉴 부분-->
+        <header class="pageHeader">
+            <!--하이퍼 링크 : <a href="이동할 경로"> 화면에 나타날 내용 </a> -->
+            <!-- 그림 <img src="이동할 경로"> src : source-->
+            <div><a href="index.html"><img src="./images/logo.png"></a></div>
+
+            <!-- 상단의 메뉴 부분-->
+            <nav> <!--하이퍼링크가 설정된 곳에 주로 사용, 네비게이션(안내 메뉴들)-->
+                <ul class="mainNav">
+                    <li><a href="membership.html">MEMBERSHIP</a></li> <!--ALT SHIFT 방향키-->
+                    <li><a href="timetable.html">TIMETABLE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <!-- 본문 콘텐츠 부분 -->
+        <div class="mainContent">
+            <h2>The Creation of Something <br> Out of Nothing</h2>
+            <p>새로움과 즐거움이 함께하는 책 세상에서 오늘 하루 즐거운 시간을...</p>
+            <a class="button" href="welcome.html">즐거운 시간 찾기</a>
+
+        </div>
+
+    </div> <!-- wrapper의 끝 -->
+    
 </body>
 </html>
 
