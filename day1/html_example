@@ -11,6 +11,7 @@
         <link rel="stylesheet" href = "연결한 문서경로" 
     <link rel="stylesheet" href="./css/reset.css"> <= 이거 있고 없고 차이가 크다. reset은 기본값을 삭제 -->
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Gowun+Dodum&family=Nanum+Gothic:wght@700&family=Sevillana&display=swap" rel="stylesheet">
     <style>
 
         html /* html 전체 적용 */
@@ -41,6 +42,74 @@
             background-position: center top; /*배경 그림의 위치, 가운데 위쪽으로 맞춤*/
             background-repeat: no-repeat;/*배경 이미지 반복 안함.*/
         }
+        img
+        {
+            max-width: 100%;
+        }
+        .pageHeader{
+            display: flex;
+            justify-content: space-between;/*양쪽 끝에 붙이기*/
+            padding: 0 1.5%;/*테두리로부터 글자/그림 사이 간격, 위/아래 왼쪽/오른쪽 */
+
+        }
+        .logo
+        {
+            width: 250px;
+            height: 40px;
+            margin-top: 14px; /*margin-top : 위에 여백 14px 남김, margin은 시계방향(위->오->아래->왼)으로 설정*/
+        }
+        
+        .mainNav{
+            display: flex; /*반드시 부모에 설정*/
+            font-size: 1.25rem; /*글씨 크기가 부모 요소의 1.25배*/
+            margin-top: 20px;
+            list-style: none;
+        }
+        /*mainNav > li : 자식, mainNav li : 후손*/
+        .mainNav li 
+        {
+            font-family: 'Gowun Dodum', sans-serif; /*font=family : 글꼴*/
+            font-size: 0.2rem;
+            margin-left: 20px;
+        }
+        .mainNav a{
+            color: blueviolet;
+        }
+        .mainNav a:hover{ /*링크 위에 마우스가 올라오면*/
+            color: cornflowerblue;
+        }
+        .wrapper{
+            max-width: 96%;
+            margin: 0 auto;/*가운데 정렬*/
+            padding: 0 4%; /*스마트폰 등에서 쉽게 볼 수 있도록 양쪽 끝 지정*/
+        }
+        .mainContent{
+            text-align: center;/*글자를 가운데 정렬*/
+            margin-top: 8%;
+        }
+        .mainContent>h2{
+            font-family: 'Sevillana', cursive;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-weight: normal;/*글자 두께, 글자 진하기 설정*/
+        }
+        .mainContent>p{
+            font-family: 'Gowun Dodum', sans-serif;;
+            font-size: 0.9rem;
+            margin: 10px 0 45px 0;
+
+        }
+        .button{
+            font-family: 'Gowun Dodum', sans-serif;
+            font-size: 0.5rem;
+            background-color: violet;
+            color: white;
+            border-radius: 5px; /*모서리 둥글게*/
+            padding: 15px 28px;
+        }
+        .button:hover{
+            background-color: yellowgreen;
+        }
     </style> <!-- style은 헤드에 작성하는게 좋음 -->
 </head>
 <body>
@@ -51,7 +120,7 @@
         <header class="pageHeader">
             <!--하이퍼 링크 : <a href="이동할 경로"> 화면에 나타날 내용 </a> -->
             <!-- 그림 <img src="이동할 경로"> src : source-->
-            <div><a href="index.html"><img src="./images/logo.png"></a></div>
+            <div><a href="index.html"><img class="logo" src="./images/logo.png"></a></div>
 
             <!-- 상단의 메뉴 부분-->
             <nav> <!--하이퍼링크가 설정된 곳에 주로 사용, 네비게이션(안내 메뉴들)-->
@@ -63,7 +132,7 @@
             </nav>
         </header> 
         <!-- 본문 콘텐츠 부분 -->
-        <div class="mainContent">
+        <div class="mainContent wrapper">
             <h2>The Creation of Something <br> Out of Nothing</h2>
             <p>새로움과 즐거움이 함께하는 책 세상에서 오늘 하루 즐거운 시간을...</p>
             <a class="button" href="welcome.html">즐거운 시간 찾기</a>
@@ -74,7 +143,6 @@
     
 </body>
 </html>
-
 #membership.html
 
 <!DOCTYPE html>
