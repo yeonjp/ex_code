@@ -1,5 +1,6 @@
 reset.css 파일 구성요소
-```
+<pre>
+<code>
 @charset "UTF-8"; /* 인코딩으로 인해 발생할 수 있는 문자 깨짐 방지 */
 
 html, body, div, span, applet, object, iframe,
@@ -20,7 +21,8 @@ time, mark, audio, video {
 	vertical-align: baseline; /* 수직정렬 */
     /*background:transparent; 배경색 투명하게 */
 }
-```
+</pre>
+</code>
 body{ /* body 태그에만 적용 */
 line-height:1; /* line - height : 줄 간격() */
 }
