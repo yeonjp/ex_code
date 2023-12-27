@@ -1,0 +1,14 @@
+경로 : 상대/절대 경로
+HTML과 관련해서 배움
+<!DOCTYPE html> <!-- html5 문서라는 의미-->
+<html lang="ko"> <!-- 속성 : 이 문서가 사용하고 있는 언어가 kor | value = "값" -->
+<head> <!--웹 페이지 제목, 정보, 외부 문서 링크, 스타일시트, 자바스크립트 -->
+    <meta charset="UTF-8"><!-- viewport : 사용할 화면 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지 연습</title>
+</head>
+<body>
+    안녕~~<br> <!-- <br/> : 시작이면서 끝임을 알려줌-->
+    즐거운&nbsp;&nbsp;&nbsp;&nbsp;시간 <!-- &nbsp; : 띄어쓰기 -->
+</body>
+</html>
