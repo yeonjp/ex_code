@@ -1,1 +1,88 @@
 #sidemenu
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideMenu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /*width: 960px; 너비
+            margin: 0 auto; 가운데 정렬*/
+            font-family: 'Gowun Dodum', sans-serif; /*gown dodum이 없으면 sans-serif로 작성하라는 뜻*/
+        }
+        /*하이퍼링크 초기화*/
+        a{
+            text-decoration: none; /*글자에 밑줄 긋기 없음*/
+            color: black; /*글자색, 배경색은 background-color*/
+        }
+        .sidepanel{
+            width: 0; /*넓이 0으로 숨기기*/
+            /*height: 300px;*/
+            position: fixed; /*위치 고정*/
+            z-index: 1; /*위로 올리기*/
+            top: 0;
+            left: 0;
+            background-color: rosybrown;
+            overflow-x: hidden;/* 오른쪽으로 넘치는 내용은 숨기기 */
+            transition: 0.5s; /* 진행 속도 */
+            padding-top: 50px; /* 테두리와 글자 사이 간격 */
+        }
+        .sidepanel a{
+            padding: 8px 8px 15px 32px;/*Q. display가 block으로 되어있는데 그러면 그 a태그의 block마다 패딩값을 주는건지 아니면 그냥 박스 전체가 저 값인지 A. a 태그의 block마다 패딩값을 적용.*/
+            text-decoration: none;
+            font-size: 25px;
+            color: azure;
+            display: block;/*인라인레벨 요소의 값을 블록레벨 요소로 변경, A. sidepanel에 존재하는 모든 a 태그를 하나하나 block 해줌.*/
+            transition: 0.3s;
+        }
+        .sidepanel a:hover{/*마우스가 글자 위에 올라오면 변함*/
+            color: rgb(77, 14, 14);
+
+        }
+        /* X 버튼과 메뉴보기 */
+        .sidepanel>.closeBtn{
+            position: absolute;/*절대 지정*/
+            top: 0; /*부모 요소의 위쪽 테두리부터 떨어지기*/
+            right: 25px;/*부모 요소의 오른쪽 끝에서부터 떨어지기*/
+            font-size: 36px;           
+        }
+        .openBtn{
+            font-size: 20px;
+            cursor: pointer;/*마우스 포인터 모양*/
+            background-color: brown;
+            color: aliceblue;
+            padding: 10px 15px;
+            border: 1px solid black;/*border: none : 테두리 안넣어줌.*/
+        }
+        .openBtn:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+    <script>
+        //메뉴보기 버튼을 클릭하면 사이드메뉴가 실행됨.
+        function openNav(){
+            //id가 firstside인 요소를 불러와 스타일 중 width 값(가로)을 변경하여 적용.
+            document.getElementById("firstside").style.width = "250px";
+        }
+        //x 버튼 클릭하면 창 닫기 실행.
+        function closeNav(){
+            document.getElementById("firstside").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+    <!--side panel 내용 : x, menu1, menu2, menu3-->
+    <div id="firstside" class="sidepanel">
+        <a href="#" class="closeBtn" onclick="closeNav()">X</a> <!-- #: 아직 어디로 갈지 정해두지 않았음-->
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+    </div>
+    <!-- button : 사이드 패널을 띄울 버튼 -->
+    <button class="openBtn" onclick="openNav()">메뉴보기</button>
+    <h2>사이드 패널 열기 예제</h2>
+    <img src="./images/kinder_elementary_01.jpg">
+</body>
+</html>
