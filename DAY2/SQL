@@ -14,6 +14,7 @@
         c. DCL : 데이터 제어어(grant, revoke - 권한 설정, 회수 / commit, rollback - 트랜잭션 완료, 되돌리기)
                 DB에 접근하거나 객체에 권한을 부여하는 역할
                 정확하게는 commit, rollback, savepoint, transaction은 TCL(transaction control Language)이다.
+                Transaction : DB의 상태를 변화시키기 위해 수행하느 작업의 단위
 
 
 1.클라이언트 & 서버
