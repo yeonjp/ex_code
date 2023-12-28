@@ -1,4 +1,21 @@
-#데이터베이스
+0. 면접
+    
+    RDBMS : relation DBMS, 관계형 DBMS
+        테이블(relation)이라는 최소 단위로 구성되어 있고 한 쌍의 행과 열로 구성되어있다.
+        a. relation - 릴레이션, 테이블
+        b. relation database - 관계 데이터베이스
+        c. relationship - 관계
+    
+    SQL(Structured Query Language, 구조적 질의어)
+        a. DDL : 데이터 정의어(create - 생성, 만들기, alter - 변경, 변형, drop, truncate - 삭제)
+                데이터를 생성, 수정, 삭제
+        b. DML : 데이터 조작어(insert - 삽입, select - 검색, 조회, update - 수정,변경, delete - 삭제)
+                테이블에 있는 행과 열을 조작
+        c. DCL : 데이터 제어어(grant, revoke - 권한 설정, 회수 / commit, rollback - 트랜잭션 완료, 되돌리기)
+                DB에 접근하거나 객체에 권한을 부여하는 역할
+                정확하게는 commit, rollback, savepoint, transaction은 TCL(transaction control Language)이다.
+
+
 1.클라이언트 & 서버
     a. 클라이언트 : 정보 요청하는 쪽
     b. 서버 : 정보를 제공
@@ -7,6 +24,7 @@
                서버가 클라이언트에게 넘겨받은 정보를 제공하는 방식
 
 2.데이터베이스(=DB)
+    #DB : data의 집합
     a. RDBMS(관계형 데이터베이스)
             a. 테이블(relation)이라는 최소 단위로 구성되어 있고 한 쌍의 행과 열로 구성되어있다.
             b. 표 형식으로 다룸.
@@ -18,11 +36,9 @@
             c. 종류
                 - MySQL, MsSQL, Oracle, MariaDB, H2, ...
     c. SQL : DBMS의 데이터를 구축, 관리하고 활용하기 위해서 사용되는 언어
-    d. 단어
-        relation - 릴레이션, 테이블
-        relation database - 관계 데이터베이스
-        relationship - 관계
+
 3.파일시스템
     a. 단점
         - 처음에는 같은 dt를 썼지만 나중에 다 다른 dt를 가지고 있음.
         - 보안성에 문제가 있을 수 있음.
+    
