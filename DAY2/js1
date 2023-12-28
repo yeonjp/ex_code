@@ -1,0 +1,50 @@
+#alert_document_console
+<!DOCTYPE html>
+<html lang="ko"><!--속성과 값은 "="으로 연결-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        /*스타일 시트 주석*/
+    </style>
+    <script>
+        //한줄 주석
+        /*여러 줄 주석*/
+        //html이나 css와 관련된 제어가 있을 때 반드시 <head></head> 사이에 작성
+        /*
+        ECMA(유럽컴퓨터제조협회)에서 자바스크립트를 ECMAScript라는 이름으로 표준화함.
+        자바스크립트(=ECMAScript) : 브라우저 안에서 실행되는 프로그래밍 언어
+                    객체지향 프로그래밍 언어
+        */
+
+        //자바스크립트 출력
+        /*
+        1. alert('') ['',"" 둘 다 문자열로 인식] : 안내(=경고) 상자
+        2. document.write(출력할 내용) : 문서에 표시
+        3. console.log(콘솔에 출력할 내용) : 콘솔창에 ()안의 내용을 띄우기
+        */
+
+       //자동완성 기능 : ctrl + SpaceBar / 자동완성 창이 안뜨면 코드 내에 오류가 있음.
+
+       /*
+       alert("Hello, world!"); void : 반환 없음, ; : 생략 가능 but 그냥 쓰자 
+       */
+
+       /* 
+       document.write("Hello, world!");
+       document.write("<br>"); document.write("<br> 태그 br : 줄 바꿈");
+       document.write("<h1> 태그 h1 : 글씨 크기(제일 큰 크기임)</h1>");
+       method  = 함수
+       */
+       
+       //console.log("Hello, World!");
+
+       //alrt("Hello, world!"); error 발생, 화면에서 alert 창이 나오지 않음.
+       alert("Hello, World!");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
